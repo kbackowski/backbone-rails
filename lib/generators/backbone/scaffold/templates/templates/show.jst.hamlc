@@ -1,7 +1,7 @@
 <% attributes.each do |attribute| -%>
 <p>
   <b><%= attribute.human_name %>:</b>
-  <%%= <%= attribute.name %> %>
+  = @<%= attribute.name %>
 </p>
 
 <% end -%>
