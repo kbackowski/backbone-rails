@@ -17,4 +17,4 @@ class <%= view_namespace %>.IndexView extends Backbone.View
     $(@el).html(@template(<%= plural_model_name %>: @options.<%= plural_model_name %>.toJSON() ))
     @addAll()
 
-    return this
+    return @

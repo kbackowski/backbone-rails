@@ -10,10 +10,10 @@ class <%= view_namespace %>.<%= singular_name.camelize %>View extends Backbone.V
 
   destroy: () ->
     @model.destroy()
-    this.remove()
+    @.remove()
 
     return false
 
   render: ->
     $(@el).html(@template(@model.toJSON() ))
-    return this
+    return @

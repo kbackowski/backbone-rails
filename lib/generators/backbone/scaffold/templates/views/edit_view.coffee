@@ -19,6 +19,6 @@ class <%= view_namespace %>.EditView extends Backbone.View
   render : ->
     $(@el).html(@template(@model.toJSON() ))
 
-    this.$("form").backboneLink(@model)
+    @.$("form").backboneLink(@model)
 
-    return this
+    return @
