@@ -1,0 +1,12 @@
+%h1
+  Edit #{singular_table_name}
+%form{:id => "edit-#{singular_table_name}", :name => singular_table_name}
+  - attributes.each do |attribute|
+    .field
+      %label{:for => attribute.name}
+        = attribute.name
+        \:
+      %input{:id => attribute.name, :name => attribute.name, :type => "text", :value => "<%= <%= attribute.name %> %>"}/
+  .actions
+    %input{:type => "submit", :value => "Update #{human_name}"}/
+%a{:href => "#/index"} Back
