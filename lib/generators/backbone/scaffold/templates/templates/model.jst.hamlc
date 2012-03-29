@@ -1,8 +1,8 @@
 - attributes.each do |attribute|
-  %td <%= <%= attribute.name %> %>
+  %td =attribute.name
 %td
-  %a{:href => "#/<%= id %>"} Show
+  %a{:href => "#/#{id}"} Show
 %td
-  %a{:href => "#/<%= id %>/edit"} Edit
+  %a{:href => "#/#{id}/edit"} Edit
 %td
-  %a.destroy{:href => "#/<%= id %>/destroy"} Destroy
+  %a.destroy{:href => "#/#{id}/destroy"} Destroy
