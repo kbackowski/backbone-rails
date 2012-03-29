@@ -6,7 +6,7 @@
       %label{:for => attribute.name}
         = attribute.name
         \:
-      %input{:id => attribute.name, :name => attribute.name, :type => "text", :value => "<%= <%= attribute.name %> %>"}/
+      %input{:id => attribute.name, :name => attribute.name, :type => "text", :value => attribute.name}/
   .actions
     %input{:type => "submit", :value => "Create #{human_name}"}/
 %a{:href => "#/index"} Back
