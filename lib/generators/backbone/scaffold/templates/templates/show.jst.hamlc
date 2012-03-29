@@ -3,5 +3,5 @@
     %b
       = attribute.human_name
       \:
-    <%= <%= attribute.name %> %>
+    = attribute.name
 %a{:href => "#/index"} Back
